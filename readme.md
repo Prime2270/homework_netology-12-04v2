@@ -20,7 +20,7 @@ GROUP by cu.store_id, sta.staff_id, a.address_id, ci.city_id
 HAVING COUNT(cu.store_id) > 300;
 ```
 
-![job1]()
+![job1](https://github.com/Prime2270/homework_netology-12-04v2/blob/main/screenshots/job1.png)
 
 ### Задание 2
 
@@ -32,9 +32,10 @@ FROM film
 WHERE LENGTH > (SELECT AVG(length) FROM film);
 ```
 
-![job2]()
+![job2](https://github.com/Prime2270/homework_netology-12-04v2/blob/main/screenshots/job2.png)
 
 ### Задание 3
+### Доработка
 
 Получите информацию, за какой месяц была получена наибольшая сумма платежей, 
 и добавьте информацию по количеству аренд за этот месяц.
@@ -45,4 +46,4 @@ WHERE date_format(payment_date, "%c.%y") = (SELECT date_format(payment_date, "%c
 GROUP BY date_format(payment_date, "%c.%y");
 ```
 
-![job3]()
+![job3](https://github.com/Prime2270/homework_netology-12-04v2/blob/main/screenshots/job3.png)
